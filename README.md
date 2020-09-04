@@ -8,23 +8,36 @@
     />
   </a>
 </p>
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# DevBoost - Drone Delivery
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Projeto do curso DevBoost - Itaú
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Docker
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+O projeto pode ser utilizado com `docker-compose`.<br/>
+Entre no diretório [Compose](/Compose) e execute `docker-compose up --build`.<br/>
+Acesse [localhost](http://127.0.0.1:5000/index.html)<br/>
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Techs:
+
+- ASP.NET Core 3.1
+- ASP.NET WebApi Core with JWT Bearer Authentication
+- Entity Framework Core 3.1
+- .NET Core Native DI
+- AutoMapper
+- MediatR
+- Swagger UI with JWT support
+
+## Arquitetura:
+
+- SOLID and Clean Code
+- DDD
+- CQRS
+- Unit of Work
+- Repository
+
+## Devs
+
+- Afonso Raffael Morais Simão - https://github.com/aptsharp
+- Jefferson Bompadre - https://github.com/jeffersonbompadre
+- Eric - https://github.com/frodoeric
