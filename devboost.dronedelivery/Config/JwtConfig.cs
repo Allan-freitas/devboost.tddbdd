@@ -11,6 +11,7 @@ namespace devboost.dronedelivery.Config
     {
         public static void AddJwtconfiguration(this IServiceCollection services, IConfiguration configuration)
         {
+            var _jwtKey = "#tUKIkgfFbk¨#(*¨&&*OIUOIljkkjghkTYUXP*&#WAPORTEVJHG@+$#^ÇKhkljhkljdcyjgh*(&nbkluhjvjv3Vcvdi";
             services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -27,7 +28,7 @@ namespace devboost.dronedelivery.Config
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(
-                        Encoding.UTF8.GetBytes(configuration["jwt:key"])
+                        Encoding.UTF8.GetBytes(_jwtKey)//configuration["jwt:key"])
                     ),
                     ClockSkew = TimeSpan.Zero
                 };
