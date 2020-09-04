@@ -25,8 +25,8 @@ Projeto do curso DevBoost - Itaú
 - Unit of Work
 - Repository
 
-## Devs
+## Desenvolvedores
 
-- Afonso Raffael Morais Simão - https://github.com/aptsharp
+- Afonso Raffael Moraes Simão - https://github.com/aptsharp
 - Jefferson Bompadre - https://github.com/jeffersonbompadre
 - Eric - https://github.com/frodoeric
