@@ -34,7 +34,7 @@ namespace devboost.Test.Config
             //_services.AddSingleton(x => new DataContext(builder.Options));
 
             _services.AddDbContext<DataContext>(options =>
-                options.UseInMemoryDatabase(databaseName: "Test"));
+                options.UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString()));
 
             _services.AddScoped<IPedidoRepository, PedidoRepository>();
             _services.AddScoped<IDroneRepository, DroneRepository>();

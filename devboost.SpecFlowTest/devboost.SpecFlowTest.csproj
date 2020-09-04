@@ -32,7 +32,9 @@
 
   <ItemGroup>
     <Folder Include="Drivers\" />
+    <Folder Include="Features\Entities\" />
     <Folder Include="Hooks\" />
+    <Folder Include="Steps\Entities\" />
   </ItemGroup>
 
   <ItemGroup>
