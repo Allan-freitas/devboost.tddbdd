@@ -97,6 +97,7 @@ namespace devboost.Test.Warmup
                 if (c == null)
                 {
                     cliente.User = user;
+                    cliente.Id = Guid.NewGuid();
                     _clienteRepository.AddCliente(cliente).Wait();
                 }
             }
@@ -109,7 +110,9 @@ namespace devboost.Test.Warmup
                 var p = _pedidoRepository.GetPedidos(StatusPedido.aguardandoEntrega).Result;
                 if (p.Count <= 5)
                 {
-                    pedido.Cliente = clienteData[new Random().Next(0, 3)];
+                    var cliente = clienteData[new Random().Next(0, 3)];
+                    pedido.Cliente = _clienteRepository.GetByUserName(cliente.Nome).Result;
+                    pedido.Id = Guid.NewGuid();
                     _pedidoRepository.AddPedido(pedido).Wait();
                 }
             }
